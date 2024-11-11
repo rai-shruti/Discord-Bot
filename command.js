@@ -7,7 +7,8 @@ const commands = [
   },
 ];
 
-const rest = new REST({ version: '10' }).setToken('MTMwNDc3MTAzNjI3MjY2MDUzMQ.Gxwz8J.wOR8b1pnbXZ_FpmaV7ArfugiQx7Pn57JC_twmE');
+const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
+
 try {
     console.log('Started refreshing application (/) commands.');
   
